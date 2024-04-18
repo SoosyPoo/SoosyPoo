@@ -1,0 +1,11 @@
+const guests = ["ANTONY", "CICERO", "CASSIUS", "CLEOPATRA"];
+guests.unshift("BRUTUS");
+guests.push("AUGUSTUS", "LUCIA");
+const spartacusIndex = guests.indexOf("SPARTACUS");
+const indexToRemove = guests.indexOf("CASSIUS");
+guests.splice(indexToRemove, 3);
+const speacialGuests = guests.slice(0, 3);
+const honerableGuests = guests.slice(0, 2); 
+const otherGuests = guests.slice(2);
+otherGuests.sort(); 
+const sortedGuests = honoredGuests.concat(otherGuests);
